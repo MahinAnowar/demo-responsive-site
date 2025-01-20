@@ -189,7 +189,7 @@ marquee {
     background: url('../assets/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     /* background-attachment: fixed; */
 }
 
@@ -303,6 +303,7 @@ marquee {
     letter-spacing: 0%;
     text-align: center;
     border: none;
+    margin-bottom: 50px;
 }
 
 
@@ -313,8 +314,13 @@ marquee {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    gap:80px;
+    gap: 80px;
+    background: url('../assets/bg.png'), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    margin: 60px 0px 0px 0px;
+    !important
 }
 
 .stories h1 {
@@ -412,17 +418,59 @@ marquee {
     width: 290.69px;
     height: 325px;
 }
+
 .st-sub-card img {
     border-radius: 16px 16px 0px 0px;
     width: 291px;
     height: 177px;
-    margin-top: -29px;
+    margin-top: -45px;
 }
 
+.st-sub-card button {
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    border: none;
+    padding: 5px 15px;
+    margin-top: -35px;
+    margin-left: -43px;
+}
 
+#st-4-btn {
+    background-color: rgb(93, 88, 240);
+}
 
+.st-sub-card p {
+    margin: 0px 54px 33px 37px;
+}
 
+#view-all-btn {
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    border: none;
+    width: 197px;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+}
 
+hr.st-hr {
+    border-top: 1px dashed gray;
+
+}
+
+/* footer */
 
 
 
@@ -520,6 +568,65 @@ marquee {
 
     .curriculam-btn {
         display: none;
+    }
+
+    /* stories */
+
+    .stories {}
+
+    #st-big {
+        display: none;
+    }
+
+    .st-sub-card {
+        width: 173.09px;
+        height: 179.59px;
+        /* margin-bottom: 50px; */
+        align-items: center;
+    }
+
+    #st-sub-card-1 {
+        margin-bottom: 60px;
+    }
+
+    #st-sub-card-2 {
+        margin-top: 52px;
+        height: 185px;
+    }
+
+    .st-sub-card img {
+        width: 173.27px;
+        height: 105.39px;
+    }
+
+    hr.st-hr {
+        margin-top: 1000px;
+    }
+
+    #view-all-btn {
+        /* margin:500px 0px; */
+        display: block;
+    }
+
+    .stories h1 {
+        font-size: 36px;
+        margin-top: -25px;
+    }
+
+    .st-sub-card button {
+        display: block;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 17.12px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-transform: capitalize;
+        border-radius: 28.54px;
+        background: rgb(149, 178, 38);
+        border: none;
+        padding: 5px 15px;
+        margin-top: -30px;
+        margin-left: -43px;
     }
 
 }
