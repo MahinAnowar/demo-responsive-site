@@ -89,8 +89,22 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 20px;
+    padding: 5px;
+    border-radius: 4px ;
 }
 
+nav ul li a:hover{
+    cursor: pointer;
+    background-color: #06174a;
+    transition: 0.5s;
+    color: #fff;
+}
+
+
+.navbar-btn:hover{
+    cursor: pointer;
+
+}
 .nav-item-1 {
     color: rgb(254, 163, 1);
 }
@@ -120,6 +134,32 @@ nav ul li a {
     width: 197px;
     height: 50px;
     text-align: center;
+}
+
+nav button:hover{
+    cursor: pointer;
+    background-color: #041137;
+    transition: 0.5s;
+}
+
+.hero-sub-1 button:hover{
+    cursor: pointer;
+    background-color: #caca1b;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+.circle-btn:hover{
+    cursor: pointer;
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+#view-all-btn:hover{
+    cursor: pointer;
+    background-color: #9dda4d;
+    transition: 0.5s;
+    color:black;
 }
 
 marquee {
@@ -207,7 +247,8 @@ marquee {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 1544px;
+    /* width: 1544px; */
+    gap: 155px;
 }
 
 .cards {
@@ -331,6 +372,7 @@ marquee {
     line-height: 57.5px;
     letter-spacing: 0%;
     text-align: center;
+    
 }
 
 .st-container {
@@ -561,7 +603,8 @@ footer {
     text-align: left;
     margin-top: -109px;
 }
-.footer-child-3 div a{
+
+.footer-child-3 div a {
     border-radius: 4px;
 }
 
@@ -662,7 +705,7 @@ footer {
 
     /* stories */
 
-    .stories {}
+
 
     #st-big {
         display: none;
@@ -721,29 +764,30 @@ footer {
 
     /* footer */
 
-    footer{
+    footer {
         flex-direction: column;
-        
+
     }
 
-    .footer-child-3{
+    .footer-child-3 {
         margin-top: 130px;
         margin-left: -217px;
     }
 
-    .footer-child-2{
+    .footer-child-2 {
         margin-left: -246px;
     }
-    .footer-child-1 div{
+
+    .footer-child-1 div {
         margin-left: -9px;
-     
+
     }
 
-    hr.section-hr{
+    hr.section-hr {
         display: none;
     }
 
-    .curriculam h1{
+    .curriculam h1 {
         margin-top: 50px;
         margin-bottom: -14px;
     }
@@ -756,11 +800,17 @@ footer {
 
 /* for medium devices */
 
-@media screen and (min-width:576px) and (max-width:1215px) {
+@media screen and (min-width:576px) and (max-width:1130px) {
+
     /* navbar */
 
     nav div h3 {
-        display: none;
+        /* display: none; */
+    }
+
+
+    .card-container {
+        gap: 60px;
     }
 
     nav div img {
@@ -782,5 +832,214 @@ footer {
 
     }
 
+    hr.nav-hr {
+        display: block;
+        border-color: rgb(254, 163, 1);
+    }
 
+    /* hero section */
+
+    .hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+
+
+    }
+
+    .hero-sub-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hero-sub-1 p {
+        text-align: center;
+        margin-top: -15px;
+    }
+
+    .hero-kid img {
+        width: 336px;
+        height: 413px;
+        margin-bottom: -10px;
+    }
+
+    .enroll-btn {
+        display: block;
+    }
+
+    .hero-sub-1 h1 {
+        text-align: center;
+        width: 357px;
+        height: 120px;
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    /* curriculam */
+
+    .card-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 36px 28px 36px 28px;
+        width: 357px;
+        height: 324px;
+    }
+
+    .curriculam {
+        gap: 10px;
+    }
+
+    .curriculam-btn {
+        display: none;
+    }
+
+    /* stories */
+
+
+
+    #st-big {
+        display: none;
+    }
+
+    .st-sub-card {
+        width: 173.09px;
+        height: 179.59px;
+        /* margin-bottom: 50px; */
+        align-items: center;
+    }
+
+    #st-sub-card-1 {
+        margin-bottom: 60px;
+    }
+
+    #st-sub-card-2 {
+        margin-top: 52px;
+        height: 185px;
+    }
+
+    .st-sub-card img {
+        width: 173.27px;
+        height: 105.39px;
+    }
+
+    hr.st-hr {
+        margin-top: 1000px;
+    }
+
+    #view-all-btn {
+        /* margin:500px 0px; */
+        display: block;
+    }
+
+    .stories h1 {
+        font-size: 36px;
+        margin-top: -25px;
+    }
+
+    .st-sub-card button {
+        display: block;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 17.12px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-transform: capitalize;
+        border-radius: 28.54px;
+        background: rgb(149, 178, 38);
+        border: none;
+        padding: 5px 15px;
+        margin-top: -30px;
+        margin-left: -43px;
+    }
+
+    /* footer */
+
+    footer {
+        flex-direction: column;
+
+    }
+
+    .footer-child-3 {
+        margin-top: 130px;
+        margin-left: -217px;
+    }
+
+    .footer-child-2 {
+        margin-left: -246px;
+    }
+
+    .footer-child-1 div {
+        margin-left: -9px;
+
+    }
+
+
+
+    hr.section-hr {
+        display: none;
+    }
+
+    .curriculam h1 {
+        margin-top: 50px;
+        margin-bottom: -14px;
+    }
+
+}
+
+@media screen and (min-width:1130px) and (max-width:1460px) {
+    .card-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 36px 28px 36px 28px;
+        width: 357px;
+        height: 324px;
+    }
+
+    .stories h1 {
+        font-size: 36px;
+        margin-top: 850px;
+    }
+
+    .curriculam h1 {
+        margin-bottom: -64px;
+    }
+
+    .circle-btn {
+        display: none;
+    }
+
+    #st-big {
+        display: block;
+    }
+
+    hr.st-hr {
+        display: none;
+    }
+
+    .st-sub {
+        margin-top: -110px;
+    }
+
+    .stories h1{
+        margin-bottom: 72px;
+    }
+
+    nav ul,
+    button {
+        display: none;
+    }
+
+    .navbar-btn {
+        display: block;
+        padding: 7.5px 3.75px;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+
+    }
 }
