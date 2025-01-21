@@ -1042,4 +1042,22 @@ footer {
         font-size: 30px;
 
     }
+
+        nav ul,
+    button {
+        display: none;
+    }
+
+    .navbar-btn {
+        display: block;
+        padding: 7.5px 3.75px;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+
+    }
+
+    .st-sub-card img{
+        margin-top: -62px;
+    }
 }
