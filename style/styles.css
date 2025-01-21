@@ -463,6 +463,7 @@ marquee {
     height: 50px;
     text-align: center;
     background-color: black;
+    margin-bottom: 60px;
 }
 
 hr.st-hr {
@@ -472,8 +473,97 @@ hr.st-hr {
 
 /* footer */
 
+footer {
+    background-color: rgb(1, 172, 253);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 90px;
+}
 
+.footer-child-1 {
+    width: 400px;
+}
 
+.footer-child-1 div {
+    display: flex;
+    align-items: center;
+}
+
+.footer-child-1 div img {
+    width: 70px;
+    height: 80px;
+}
+
+.footer-child-1 div h4 {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 39.14px;
+    font-weight: 700;
+    line-height: 39.51px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer-child-1 p {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: -10px;
+}
+
+/* .footer-child-2{margin-bottom: -5px;} */
+
+.footer-child-2 h4 {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer-child-2 ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-child-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-left: -40px;
+}
+
+.footer-child-2 ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer-child-3 h4 {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: -109px;
+}
+.footer-child-3 div a{
+    border-radius: 4px;
+}
 
 /* for small devices */
 
@@ -627,6 +717,35 @@ hr.st-hr {
         padding: 5px 15px;
         margin-top: -30px;
         margin-left: -43px;
+    }
+
+    /* footer */
+
+    footer{
+        flex-direction: column;
+        
+    }
+
+    .footer-child-3{
+        margin-top: 130px;
+        margin-left: -217px;
+    }
+
+    .footer-child-2{
+        margin-left: -246px;
+    }
+    .footer-child-1 div{
+        margin-left: -9px;
+     
+    }
+
+    hr.section-hr{
+        display: none;
+    }
+
+    .curriculam h1{
+        margin-top: 50px;
+        margin-bottom: -14px;
     }
 
 }
